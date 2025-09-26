@@ -50,3 +50,36 @@ console.log(typeof myObj);
 console.log(typeof myFunction);
 
 
+
+//******************** Memory types and where it is used  ********************
+
+// 1) Stack Memory (used for primitive datatype) and 
+// 2) Heap Memory (used for non-primitive datatype) 
+
+let myYouTubeName = "Narenkumardotcom"
+let anotherName = myYouTubeName;
+console.log(anotherName);
+
+anotherName = "chaiaurcode"
+
+console.log(myYouTubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upiId: "user@ybl"
+
+}
+
+let userTwo = userOne;
+
+userTwo.email="Naren@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+// all the primitive values goes into stack , and when we take anything into stack then we get a copy of it
+// but when we keep any values in heap then we get its reference so whet ever we change we change in original value 
+
+
